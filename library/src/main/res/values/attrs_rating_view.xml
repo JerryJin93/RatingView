@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RatingView">
+        <attr name="android:paddingTop" format="dimension"/>
+        <attr name="android:paddingLeft" format="dimension"/>
+        <attr name="android:paddingRight" format="dimension"/>
+        <attr name="android:paddingBottom" format="dimension"/>
+        <attr name="starSize" format="dimension"/>
+        <attr name="rating" format="float"/>
+        <attr name="starCount" format="integer"/>
+        <attr name="starGap" format="dimension"/>
+        <attr name="ratingColor" format="color"/>
+        <attr name="ratingStep" format="float"/>
+    </declare-styleable>
+</resources>
