@@ -1,9 +1,9 @@
 # RatingView
 A useful Android widget for rating.
 
-## `How to use`
+## How to use
 
-### `Step 1: Add it in your root build.gradle at the end of repositories.`
+### Step 1: Add it in your root build.gradle at the end of repositories.
 
 ```
 allprojects {
@@ -14,16 +14,15 @@ allprojects {
 	}
 ```
 
-### `Step 2: Add the dependency.`
+### Step 2: Add the dependency.
 
 ```
 	dependencies {
 	        implementation 'com.github.JerryJin93:RatingView:Tag'
 	}
-
 ```
 
-### `In layout file, for example:`
+### In layout file, for example:
 
 ```
     <com.jerryjin.ratingview.library.widget.RatingView
@@ -32,7 +31,7 @@ allprojects {
             android:layout_height="wrap_content"
             app:starSize="70dp"/>
 ```
-### `And in Activity file:`
+### And in Activity file:
 ```
     private RatingView mRatingView;
 
