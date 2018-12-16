@@ -6,7 +6,7 @@ A useful Android widget for rating.
 ### Step 1: Add it in your root build.gradle at the end of repositories.
 
 ```
-allprojects {
+	allprojects {
 		repositories {
 			...
 			maven { url 'https://jitpack.io' }
@@ -18,7 +18,7 @@ allprojects {
 
 ```
 	dependencies {
-	        implementation 'com.github.JerryJin93:RatingView:Tag'
+	        implementation 'com.github.JerryJin93:RatingView:0.0.2'
 	}
 ```
 
