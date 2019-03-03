@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RCImageView">
+        <attr name="radius" format="dimension"/>
+        <attr name="border_radius" format="dimension"/>
+        <attr name="enable_outline" format="boolean"/>
+        <attr name="outline_color" format="color"/>
+        <attr name="outline_width" format="dimension"/>
+        <attr name="outline_spacing" format="dimension"/>
+        <attr name="rc_type" format="enum">
+            <enum name="circle" value="0"/>
+            <enum name="round_corner" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="LineView">
+        <attr name="line_color" format="color"/>
+        <attr name="line_width" format="dimension"/>
+        <attr name="line_mode" format="enum">
+            <enum name="portrait" value="0"/>
+            <enum name="landscape" value="1"/>
+        </attr>
+        <attr name="line_gravity" format="enum">
+            <enum name="center" value="0"/>
+        </attr>
+        <attr name="line_offset_x" format="dimension"/>
+        <attr name="line_offset_y" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="FlexibleRatingView">
+        <attr name="capacity" format="integer"/>
+        <attr name="margins" format="dimension"/>
+        <attr name="view_size" format="dimension"/>
+        <attr name="scores" format="float"/>
+        <attr name="maxScores" format="integer"/>
+        <attr name="shape" format="enum">
+            <enum name="star" value="0"/>
+            <enum name="circle" value="1"/>
+        </attr>
+        <attr name="color" format="color"/>
+        <attr name="drawing_mode" format="enum">
+            <enum name="rendering_mode" value="0"/>
+            <enum name="img_mode" value="1"/>
+        </attr>
+        <attr name="touch_mode" format="boolean"/>
+        <attr name="on_img" format="reference"/>
+        <attr name="off_image" format="reference"/>
+        <attr name="off_image_padding_left" format="dimension"/>
+        <attr name="off_image_padding_top" format="dimension"/>
+        <attr name="off_image_padding_right" format="dimension"/>
+        <attr name="off_image_padding_bottom" format="dimension"/>
+        <attr name="output_mode" format="enum">
+            <enum name="origin" value="0"/>
+            <enum name="fraction" value="1"/>
+        </attr>
+        <attr name="use_palette" format="boolean"/>
+    </declare-styleable>
+</resources>
