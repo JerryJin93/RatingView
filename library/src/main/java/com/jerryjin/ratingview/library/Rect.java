@@ -6,6 +6,8 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.os.Build;
 
+import com.jerryjin.ratingview.library.widget.newer.ShapeView;
+
 /**
  * Author: Jerry
  * Generated at: 2019/2/22 10:34

@@ -6,7 +6,8 @@ import android.util.Log;
 import android.widget.SeekBar;
 import android.widget.Toast;
 
-import com.jerryjin.ratingview.library.widget.RatingView;
+import com.jerryjin.ratingview.library.widget.newer.FlexibleRatingView;
+import com.jerryjin.ratingview.library.widget.older.RatingView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -18,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.seekBar)
     SeekBar mSeekBar;
+
+    @BindView(R.id.ratingView2)
+    FlexibleRatingView flexibleRatingView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,16 +45,20 @@ public class MainActivity extends AppCompatActivity {
                 super.onProgressChanged(seekBar, progress, fromUser);
                 float percentage = progress * 1.0f / 100;
                 Log.e("PERCENTAGE", String.valueOf(percentage));
-                mRv.setOnRatingChangeListener(new RatingView.OnRatingChangeListener() {
-                    @Override
-                    public void onRatingChange(float rating) {
-                        Log.e("OUTRATING:" , String.valueOf(mRv.getRating()));
-                        Toast.makeText(MainActivity.this,
-                                "ratingProgress: " + String.valueOf(rating * 10), Toast.LENGTH_SHORT).show();
-                    }
-                }).setRatingProgress(percentage);
+//                mRv.setOnRatingChangeListener(new RatingView.OnRatingChangeListener() {
+//                    @Override
+//                    public void onRatingChange(float rating) {
+//                        Log.e("OUTRATING:" , String.valueOf(mRv.getRating()));
+//                        Toast.makeText(MainActivity.this,
+//                                "ratingProgress: " + String.valueOf(rating * 10), Toast.LENGTH_SHORT).show();
+//                    }
+//                }).setRatingProgress(percentage);
+                flexibleRatingView.setScores(percentage * 5);
             }
         });
+
+
+
     }
 
 

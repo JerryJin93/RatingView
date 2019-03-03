@@ -1,4 +1,4 @@
-package com.jerryjin.ratingview.library;
+package com.jerryjin.ratingview.library.widget.newer;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -24,6 +24,10 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+
+import com.jerryjin.ratingview.library.Logger;
+import com.jerryjin.ratingview.library.R;
+import com.jerryjin.ratingview.library.UI;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -760,6 +764,15 @@ public class FlexibleRatingView extends View {
     public void setFraction(float mFraction) {
         this.mFraction = mFraction;
         invalidate();
+    }
+
+    public void setMaxScores(int mMaxScores) {
+        this.mMaxScores = mMaxScores;
+        invalidate();
+    }
+
+    public int getMaxScores() {
+        return mMaxScores;
     }
 
     public CustomShapeDepiction getCustomShapeResource() {

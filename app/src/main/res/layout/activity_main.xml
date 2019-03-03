@@ -7,11 +7,23 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <com.jerryjin.ratingview.library.widget.RatingView
+    <com.jerryjin.ratingview.library.widget.older.RatingView
         android:id="@+id/ratingView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:starSize="70dp"/>
+        app:starSize="70dp"
+        android:visibility="gone"/>
+
+    <com.jerryjin.ratingview.library.widget.newer.FlexibleRatingView
+        android:id="@+id/ratingView2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:capacity="5"
+        app:scores="4.7"
+        app:margins="5dp"
+        app:drawing_mode="img_mode"
+        app:off_image="@drawable/star2"
+        app:maxScores="5"/>
 
     <SeekBar
         android:id="@+id/seekBar"

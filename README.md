@@ -18,22 +18,30 @@ A useful Android widget for rating.
 
 ```
 	dependencies {
-	        implementation 'com.github.JerryJin93:RatingView:0.0.2'
+	        implementation 'com.github.JerryJin93:RatingView:0.0.3'
 	}
 ```
 
 ### In layout file, for example:
 
 ```
-    <com.jerryjin.ratingview.library.widget.RatingView
+    <com.jerryjin.ratingview.library.widget.newer.FlexibleRatingView
             android:id="@+id/ratingView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:starSize="70dp"/>
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:capacity="5"
+            app:margins="5dp"
+            app:drawing_mode="img_mode"
+            app:off_image="@drawable/star2"
+            app:maxScores="5"/>
 ```
+#### `The layout_height is used to measure the single cell of the view.`
+
+### Attributes:
+
 ### And in Activity file:
 ```
-    private RatingView mRatingView;
+    private FlexibleRatingView mRatingView;
 
     mRatingView.setOnRatingChangeListener(new RatingView.OnRatingChangeListener(){
         @Override

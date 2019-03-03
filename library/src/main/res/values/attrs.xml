@@ -1,30 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="RCImageView">
-        <attr name="radius" format="dimension"/>
-        <attr name="border_radius" format="dimension"/>
-        <attr name="enable_outline" format="boolean"/>
-        <attr name="outline_color" format="color"/>
-        <attr name="outline_width" format="dimension"/>
-        <attr name="outline_spacing" format="dimension"/>
-        <attr name="rc_type" format="enum">
-            <enum name="circle" value="0"/>
-            <enum name="round_corner" value="1"/>
-        </attr>
-    </declare-styleable>
 
-    <declare-styleable name="LineView">
-        <attr name="line_color" format="color"/>
-        <attr name="line_width" format="dimension"/>
-        <attr name="line_mode" format="enum">
-            <enum name="portrait" value="0"/>
-            <enum name="landscape" value="1"/>
-        </attr>
-        <attr name="line_gravity" format="enum">
-            <enum name="center" value="0"/>
-        </attr>
-        <attr name="line_offset_x" format="dimension"/>
-        <attr name="line_offset_y" format="dimension"/>
+    <declare-styleable name="RatingView">
+        <attr name="android:paddingTop" format="dimension"/>
+        <attr name="android:paddingLeft" format="dimension"/>
+        <attr name="android:paddingRight" format="dimension"/>
+        <attr name="android:paddingBottom" format="dimension"/>
+        <attr name="starSize" format="dimension"/>
+        <attr name="rating" format="float"/>
+        <attr name="starCount" format="integer"/>
+        <attr name="starGap" format="dimension"/>
+        <attr name="ratingColor" format="color"/>
+        <attr name="ratingStep" format="float"/>
     </declare-styleable>
 
     <declare-styleable name="FlexibleRatingView">

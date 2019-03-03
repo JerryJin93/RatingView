@@ -1,4 +1,4 @@
-package com.jerryjin.ratingview.library;
+package com.jerryjin.ratingview.library.widget.older;
 
 public class OutOfRatingException extends Exception {
 

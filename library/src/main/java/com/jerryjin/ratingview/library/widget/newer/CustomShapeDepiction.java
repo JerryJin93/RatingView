@@ -1,4 +1,4 @@
-package com.jerryjin.ratingview.library;
+package com.jerryjin.ratingview.library.widget.newer;
 
 import android.graphics.Bitmap;
 import android.support.annotation.DrawableRes;

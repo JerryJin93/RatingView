@@ -1,4 +1,4 @@
-package com.jerryjin.ratingview.library.widget;
+package com.jerryjin.ratingview.library.widget.older;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -17,13 +17,15 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.jerryjin.ratingview.library.OutOfRatingException;
 import com.jerryjin.ratingview.library.R;
 import com.jerryjin.ratingview.library.UI;
 
 import java.math.BigDecimal;
 
-
+/**
+ * Only for researching use.
+ */
+@Deprecated
 public class RatingView extends View {
 
     private static final float DEFAULT_RATING = 0f;
