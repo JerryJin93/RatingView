@@ -167,6 +167,15 @@ public class Logger {
         }
     }
 
+    /**
+     *  - - - - - - - - - - - - - - - - - - - - - - - -
+     * |                                               |
+     * |                                               |
+     */
+    private static void printHeader() {
+
+    }
+
     public String getTag() {
         return tag;
     }

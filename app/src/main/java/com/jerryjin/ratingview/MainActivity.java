@@ -39,6 +39,13 @@ public class MainActivity extends AppCompatActivity {
 //                        Toast.LENGTH_SHORT).show();
 //            }
 //        });
+        flexibleRatingView.setEnableTouch(true);
+        flexibleRatingView.setOnScoreChangeListener(new FlexibleRatingView.OnScoreChangeListener() {
+            @Override
+            public void onScoreChangeListener(float outScores) {
+                Toast.makeText(MainActivity.this, "scores: " + outScores, Toast.LENGTH_SHORT).show();
+            }
+        });
         mSeekBar.setOnSeekBarChangeListener(new OnSeekBarChangeImpl() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {

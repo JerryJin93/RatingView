@@ -40,7 +40,10 @@ import static com.jerryjin.ratingview.library.Logger.TYPE_ERROR;
 /**
  * Author: Jerry
  * Generated at: 2019/2/21 10:33
+ * GitHub: https://github.com/JerryJin93
+ * Blog:
  * WeChat: enGrave93
+ * Version: 0.0.3
  * Description: A flexible selection view for Android.
  */
 public class FlexibleRatingView extends View {
@@ -391,9 +394,9 @@ public class FlexibleRatingView extends View {
             int offset = view.getOffset();
             for (int i = 0; i < mCapacity; i++) {
                 view.draw(canvas);
-                view.setWidth((int) UI.dp2px(getContext(), 40));
-                view.setHeight(view.getWidth());
-                requestLayout();
+//                view.setWidth((int) UI.dp2px(getContext(), 40));
+//                view.setHeight(view.getWidth());
+//                requestLayout();
                 canvas.translate(view.getWidth() + mMargins - offset, 0);
                 Logger.print(TYPE_ERROR, TAG,
                         "trans w", "" + (view.getWidth() + mMargins - offset), "originW", "" + view.getWidth(), "margins",
